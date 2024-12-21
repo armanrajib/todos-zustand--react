@@ -1,7 +1,14 @@
+import AddTodoForm from "./components/addTodoForm";
+import TodoList from "./components/TodoList";
+
 function App() {
   return (
-    <div>
-      <h1>Hello, Zustand!</h1>
+    <div className="container mx-auto max-w-lg h-screen py-6">
+      <div className="flex flex-col p-4 border rounded-lg shadow-lg h-full">
+        <h1 className="text-2xl font-bold mb-4">Todo List</h1>
+        <AddTodoForm />
+        <TodoList />
+      </div>
     </div>
   );
 }
